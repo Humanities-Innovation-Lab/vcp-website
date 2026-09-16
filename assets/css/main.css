@@ -17,16 +17,10 @@
   --primary: #000000;
   --primary-soft: #222222;
 
-  --accent: #b9915d;
-  --accent-dark: #8b6a3f;
+  --accent: #b87945;
+  --accent-dark: #8d552b;
   --accent-pale: #efe3d1;
 
-  /* Logo (bird) palette — used as subtle accents for brand cohesion */
-  --logo-green: #2f8020;
-  --logo-gold: #f0c030;
-  --logo-purple: #704080;
-  --logo-teal: #1aa3ad;
-  --logo-red: #d0341a;
 
   --text: #111111;
   --muted: #555555;
@@ -430,18 +424,13 @@ p:last-child {
 .btn--outline:hover,
 .btn--outline-light:hover,
 .btn--ghost:hover {
-  background: var(--logo-green);
+  background: var(--accent);
   color: var(--white);
-  border-color: var(--logo-green);
+  border-color: var(--accent);
 }
 
 /* Per-button hover colors drawn from the logo palette.
    Listed after the default so the modifier wins (equal specificity). */
-.btn--green:hover  { background: var(--logo-green);  color: var(--white);   border-color: var(--logo-green); }
-.btn--purple:hover { background: var(--logo-purple); color: var(--white);   border-color: var(--logo-purple); }
-.btn--teal:hover   { background: var(--logo-teal);   color: var(--white);   border-color: var(--logo-teal); }
-.btn--red:hover    { background: var(--logo-red);    color: var(--white);   border-color: var(--logo-red); }
-.btn--gold:hover   { background: var(--logo-gold);   color: var(--white);   border-color: var(--logo-gold); }
 
 /* ============================================================
    IMAGE + TEXT SPLIT SECTIONS
@@ -552,16 +541,10 @@ p:last-child {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.14);
-  border-left: 3px solid var(--logo-green);
+  border-left: 3px solid var(--accent);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Each card carries a different logo color on its left edge */
-.card:nth-child(5n+1) { border-left-color: var(--logo-green); }
-.card:nth-child(5n+2) { border-left-color: var(--logo-gold); }
-.card:nth-child(5n+3) { border-left-color: var(--logo-purple); }
-.card:nth-child(5n+4) { border-left-color: var(--logo-teal); }
-.card:nth-child(5n+5) { border-left-color: var(--logo-red); }
 
 .card:hover {
   transform: translateY(-3px);
@@ -598,7 +581,7 @@ p:last-child {
 }
 
 .card__tag {
-  color: var(--logo-teal);
+  color: var(--accent-dark);
 }
 
 .card__title {
@@ -631,8 +614,8 @@ p:last-child {
 }
 
 .card__link:hover {
-  color: var(--logo-green);
-  border-bottom-color: var(--logo-green);
+  color: var(--accent-dark);
+  border-bottom-color: var(--accent);
 }
 
 /* Home output cards: pin the link to the bottom, like the outputs page */
@@ -1054,8 +1037,8 @@ p:last-child {
 }
 
 .card__read-more:hover {
-  color: var(--logo-green);
-  border-bottom-color: var(--logo-green);
+  color: var(--accent-dark);
+  border-bottom-color: var(--accent);
 }
 
 /* Outputs page: stacked full-width rows (image left when present, text
@@ -1126,7 +1109,7 @@ p:last-child {
 
 .outputs-search:focus {
   outline: none;
-  border-color: var(--logo-teal);
+  border-color: var(--accent);
 }
 
 .outputs-filter {
@@ -1149,13 +1132,13 @@ p:last-child {
 }
 
 .outputs-chip:hover {
-  border-color: var(--logo-teal);
-  color: var(--logo-teal);
+  border-color: var(--accent);
+  color: var(--accent-dark);
 }
 
 .outputs-chip.is-active {
-  background: var(--logo-teal);
-  border-color: var(--logo-teal);
+  background: var(--accent);
+  border-color: var(--accent);
   color: var(--white);
 }
 
@@ -1194,13 +1177,13 @@ p:last-child {
 }
 
 .pagination__btn:hover:not(:disabled) {
-  border-color: var(--logo-teal);
-  color: var(--logo-teal);
+  border-color: var(--accent);
+  color: var(--accent-dark);
 }
 
 .pagination__btn.is-active {
-  background: var(--logo-teal);
-  border-color: var(--logo-teal);
+  background: var(--accent);
+  border-color: var(--accent);
   color: var(--white);
 }
 
@@ -1352,8 +1335,8 @@ p:last-child {
 }
 
 .connect-feature__panel p a {
-  color: var(--logo-teal);
-  border-bottom: 1px solid var(--logo-teal);
+  color: var(--accent-dark);
+  border-bottom: 1px solid var(--accent);
 }
 
 /* Contact page — single centered card, no image */
@@ -1400,8 +1383,8 @@ p:last-child {
 }
 
 .contact-card p a {
-  color: var(--logo-teal);
-  border-bottom: 1px solid var(--logo-teal);
+  color: var(--accent-dark);
+  border-bottom: 1px solid var(--accent);
 }
 
 /* ============================================================
@@ -1756,17 +1739,11 @@ p:last-child {
 .program-card {
   padding: 1.5rem;
   border: 1px solid rgba(0,0,0,0.14);
-  border-left: 3px solid var(--logo-green);
+  border-left: 3px solid var(--accent);
   border-radius: 0;
   background: #fff;
 }
 
-/* Each card carries a different logo color on its left edge */
-.program-card:nth-child(5n+1) { border-left-color: var(--logo-green); }
-.program-card:nth-child(5n+2) { border-left-color: var(--logo-gold); }
-.program-card:nth-child(5n+3) { border-left-color: var(--logo-purple); }
-.program-card:nth-child(5n+4) { border-left-color: var(--logo-teal); }
-.program-card:nth-child(5n+5) { border-left-color: var(--logo-red); }
 
 .program-card h3 {
   margin-bottom: 0.25rem;
@@ -1839,7 +1816,7 @@ p:last-child {
 
 .research-banner__label {
   text-align: left;
-  color: var(--logo-teal);
+  color: var(--accent-dark);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1913,7 +1890,7 @@ p:last-child {
 
 .outputs-label {
   text-align: left;
-  color: var(--logo-teal);
+  color: var(--accent-dark);
   font-size: var(--label-size);
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1950,18 +1927,12 @@ p:last-child {
   content: "\2022";
   font-size: 1.5rem;
   line-height: 1;
-  color: var(--logo-teal);
+  color: var(--accent-dark);
   flex-shrink: 0;
   min-width: 0.7rem;
   text-align: center;
 }
 
-/* Each bullet takes a different logo color, cycling the palette */
-.outputs-list li:nth-child(5n+1)::before { color: var(--logo-green); }
-.outputs-list li:nth-child(5n+2)::before { color: var(--logo-gold); }
-.outputs-list li:nth-child(5n+3)::before { color: var(--logo-purple); }
-.outputs-list li:nth-child(5n+4)::before { color: var(--logo-red); }
-.outputs-list li:nth-child(5n+5)::before { color: var(--logo-teal); }
 
 /* ============================================================
    FUNDING
@@ -2039,7 +2010,7 @@ p:last-child {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--logo-teal);
+  color: var(--accent-dark);
   margin: 0;
   /* text-align:center overrides the global justified <p> rule, which
      otherwise spreads a multi-word role line edge-to-edge.
@@ -2111,7 +2082,7 @@ p:last-child {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--logo-teal);
+  color: var(--accent-dark);
 }
 
 .funding-item__title {
@@ -2139,7 +2110,7 @@ p:last-child {
 }
 
 .funding-item__note--current {
-  color: var(--logo-green);
+  color: var(--accent-dark);
   font-weight: 600;
 }
 
@@ -2312,10 +2283,6 @@ p:last-child {
   gap: 0.5rem;
 }
 
-/* Each legend entry carries its own logo color */
-.page-legend__list li:nth-child(1) { --legend-color: var(--logo-gold); }
-.page-legend__list li:nth-child(2) { --legend-color: var(--logo-purple); }
-.page-legend__list li:nth-child(3) { --legend-color: var(--logo-red); }
 
 .page-legend__link {
   display: block;
@@ -2371,16 +2338,9 @@ p:last-child {
 .publication {
   background: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.12);
-  border-left: 3px solid var(--logo-green);
+  border-left: 3px solid var(--accent);
   padding: 1.1rem 1.35rem;
 }
-
-/* Rotate the logo palette down each list, as the cards do */
-.publication:nth-child(5n+1) { border-left-color: var(--logo-green); }
-.publication:nth-child(5n+2) { border-left-color: var(--logo-gold); }
-.publication:nth-child(5n+3) { border-left-color: var(--logo-purple); }
-.publication:nth-child(5n+4) { border-left-color: var(--logo-teal); }
-.publication:nth-child(5n+5) { border-left-color: var(--logo-red); }
 
 .publication > p { margin: 0 0 0.3rem; }
 .publication > p:last-child { margin-bottom: 0; }
@@ -2467,15 +2427,9 @@ p:last-child {
 .viewer-entry {
   background: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.12);
-  border-left: 3px solid var(--logo-green);
+  border-left: 3px solid var(--accent);
   padding: 1.5rem 1.75rem 1.75rem;
 }
-
-.viewer-entry:nth-child(5n+1) { border-left-color: var(--logo-green); }
-.viewer-entry:nth-child(5n+2) { border-left-color: var(--logo-gold); }
-.viewer-entry:nth-child(5n+3) { border-left-color: var(--logo-purple); }
-.viewer-entry:nth-child(5n+4) { border-left-color: var(--logo-teal); }
-.viewer-entry:nth-child(5n+5) { border-left-color: var(--logo-red); }
 
 .viewer-entry__head {
   display: flex;
