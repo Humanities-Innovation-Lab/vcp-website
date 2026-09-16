@@ -1,1 +1,41 @@
-<!-- TODO: blogs — placeholder, no content yet -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head section-head--left">
+      <h2>Project Updates</h2>
+      <p>Notes from the field and the lab, written as the work happened.</p>
+    </div>
+
+    <div class="cards">
+      {% assign updates = site.posts | sort: "date" | reverse %}
+
+      {% for post in updates %}
+        <article class="card">
+          <a href="{{ post.url | relative_url }}" class="card__link-wrap">
+            {% if post.image %}
+              <div class="card__thumb">
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+              </div>
+            {% endif %}
+
+            <div class="card__body">
+              <div class="card__meta">
+                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                {% if post.author %}
+                  <span class="card__tag">{{ post.author }}</span>
+                {% endif %}
+              </div>
+
+              <h3 class="card__title">{{ post.title }}</h3>
+
+              <p class="card__excerpt">
+                {{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 160 }}
+              </p>
+
+              <span class="card__read-more">Read More →</span>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

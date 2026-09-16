@@ -4,3 +4,7 @@ _site/
 .jekyll-metadata
 .bundle/
 vendor/
+
+# Large local media — too big for GitHub (100 MB file limit) and for Pages.
+# Host these externally (YouTube/Vimeo/Zenodo) and embed instead.
+assets/video/
