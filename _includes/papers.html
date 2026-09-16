@@ -1,0 +1,52 @@
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Outputs</h2>
+    </div>
+
+    <div class="cards">
+
+      {% for post in site.posts limit:3 %}
+        <article class="card">
+
+          {% if post.image %}
+            <div class="card__thumb">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+            </div>
+          {% endif %}
+
+          <div class="card__body">
+            <div class="card__meta">
+              <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+              {% if post.category %}
+                <span class="card__tag">{{ post.category }}</span>
+              {% elsif post.categories and post.categories.size > 0 %}
+                <span class="card__tag">{{ post.categories[0] }}</span>
+              {% endif %}
+            </div>
+
+            <h3 class="card__title">{{ post.title }}</h3>
+
+            {% if post.excerpt %}
+              <p class="card__excerpt">
+                {{ post.excerpt | strip_html | truncate: 150 }}
+              </p>
+            {% endif %}
+
+            {% if post.external_url %}
+              <a href="{{ post.external_url }}" class="card__link" target="_blank" rel="noopener">View on Zenodo →</a>
+            {% else %}
+              <a href="{{ post.url | relative_url }}" class="card__link">Read More →</a>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+
+    </div>
+
+    <div class="view-all-row">
+      <a href="{{ site.baseurl }}/outputs/" class="btn btn--ghost btn--teal">View All Updates</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/logo.ico">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/logo.png">
+
+<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="description" content="{{ site.description | strip_newlines | strip }}">
+<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+<meta property="og:description" content="{{ site.description | strip_newlines | strip }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="website">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+</head>
+
+<body>
+
+  {% include header.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>
