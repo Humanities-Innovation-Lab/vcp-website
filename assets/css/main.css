@@ -178,7 +178,7 @@ p:last-child {
 }
 
 .section {
-  padding: 6rem 0;
+  padding: 4.5rem 0;
   background: var(--bg);
   scroll-margin-top: calc(var(--nav-h) + 1rem);
 }
@@ -206,7 +206,7 @@ p:last-child {
 .section-head {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 3.75rem;
+  margin: 0 auto 2.75rem;
 }
 
 .section-head p {
@@ -1267,6 +1267,20 @@ p:last-child {
   color: var(--primary);
 }
 
+.intro-figure {
+  margin: 2.5rem 0 0;
+}
+
+.intro-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
 .prose a,
 .program-card p a,
 .viewer-entry__body > p:not(.viewer-entry__links) a {
@@ -1402,7 +1416,7 @@ p:last-child {
 .land-ack {
   background: var(--bg-alt);
   color: var(--primary);
-  padding: 4.5rem 2rem 3.5rem;
+  padding: 3.5rem 2rem 3rem;
   text-align: center;
 }
 
@@ -1652,7 +1666,7 @@ p:last-child {
   }
 
   .section {
-    padding: 4.25rem 0;
+    padding: 3.25rem 0;
   }
 
   .section-head {
