@@ -1369,12 +1369,6 @@ p:last-child {
   min-height: calc(100vh - var(--nav-h) - 8rem);
   padding: 5rem 1.5rem;
   background-color: var(--bg-alt);
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)),
-    url('../img/intro.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .contact-card {
@@ -1384,9 +1378,34 @@ p:last-child {
   margin: 0 auto;
   padding: 4.25rem 3.75rem;
   text-align: center;
-  background: var(--bg-alt);
+  background: var(--white);
   border: 2px solid var(--primary);
   box-shadow: var(--shadow);
+}
+
+.contact-card h1 {
+  color: var(--primary);
+  font-size: var(--h2-size);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.contact-card__detail {
+  margin-top: 2.25rem;
+}
+
+.contact-card p.contact-card__label {
+  font-family: var(--font-ui);
+  font-size: var(--label-size);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+.contact-card__detail p:last-child {
+  margin-bottom: 0;
 }
 
 .contact-card h2 {
@@ -2144,8 +2163,10 @@ p:last-child {
 
 .funder-logo__img {
   display: block;
+  align-self: flex-start;
   width: auto;
   height: 60px;
+  max-width: 100%;
   /* keep clear, open space around each funder mark */
 }
 
