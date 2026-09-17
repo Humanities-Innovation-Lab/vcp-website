@@ -5,6 +5,6 @@ _site/
 .bundle/
 vendor/
 
-# Large local media — too big for GitHub (100 MB file limit) and for Pages.
-# Host these externally (YouTube/Vimeo/Zenodo) and embed instead.
-assets/video/
+# Video is self-hosted. Keep individual files well under GitHub's 100 MB
+# per-file hard limit, and use preload="none" so /viewer/ does not download
+# them on page load.

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "The Brussels Cross"
+author: "Administrator"
+date: 2012-01-24
+source: "http://visionarycross.org/brussels-cross/"
+archived: "20180819160732"
+archive_source: "Common Crawl CC-MAIN-2018-34"
+---
+The **Brussels Cross** or **Drahmal Cross** is an [Anglo-Saxon](http://en.wikipedia.org/wiki/Anglo-Saxon_art) [cross](http://en.wikipedia.org/wiki/Cross)–[reliquary](http://en.wikipedia.org/wiki/Reliquary) of the early 11th century, now in the treasury of the [Cathedral](http://en.wikipedia.org/wiki/Cathedral) of SS. [Michel](http://en.wikipedia.org/wiki/Saint_Michael) and [Gudule](http://en.wikipedia.org/wiki/Gudula), [Brussels](http://en.wikipedia.org/wiki/Brussels). Badly damaged and with its once jewelled front missing, it takes the form of a large piece of cross-shaped wood covered with a silver plate bearing medallions engraved with the [evangelists’ symbols](http://en.wikipedia.org/wiki/Evangelists%27_symbols) at the end of the arms and an *Agnus Dei* at the center. Across the arms the artist has inscribed his name in large [Roman](http://en.wikipedia.org/wiki/Roman_alphabet) letters: + *Drahmal me worhte* (‘Drahmal made me’). An inscription around the edges reads: + *Rod is min nama; geo ic ricne Cyning bær byfigynde, blod bestemed* (‘Rood is my name. Trembling once, I bore a powerful king, made wet with blood’). These lines bear a close relationship to ll. 44 and 48 in the [Old English](http://en.wikipedia.org/wiki/Old_English) poem, ‘[The Dream of the Rood](http://en.wikipedia.org/wiki/The_Dream_of_the_Rood)‘. This is followed by a common form of dedication: *þas rod het Æþmær wyrican and Aðelwold hys beroþo[r] Criste to lofe for Ælfrices saule hyra beroþor* (‘Æthlmær and Athelwold, his brother, ordered this rood to be made so as to praise [Christ](http://en.wikipedia.org/wiki/Christ) for the soul of Ælfric, their brother’). The [Anglo-Saxon](http://en.wikipedia.org/wiki/Anglo-Saxon_language) inscription is contained on a silver strip which runs around the edges of the cross. It is written not in [runes](http://en.wikipedia.org/wiki/Runes), but in Roman letters, in a curious mixture of Latin-style majuscules and minuscules. The letters ‘NE’ of *ricne*, ‘NG’ of *cyning* and ‘ME’ of *bestemed* are written as ligatures. Although it has not proved possible to identify with any certainty the persons named in the inscription, the text is in late West-Saxon which would ascribe it to the late tenth century or perhaps later.
+
+[slickr-flickr tag=”brussels” type=”gallery”]
